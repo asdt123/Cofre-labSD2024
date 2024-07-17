@@ -1,0 +1,40 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity registrador_16bits is
+	port 
+	(
+		clk			: in std_logic;
+		enable		: in std_logic;
+		reset			: in std_logic;
+		input			: in std_logic_vector(3 downto 0);
+		output		: out std_logic_vector(15 downto 0)
+	);
+end entity;
+
+architecture rtl of registrador_16bits is
+component registrador_carga_paralela is
+
+	generic
+	(
+		DATA_WIDTH : natural := 4
+	);
+
+	port 
+	(
+		clk			: in std_logic;
+		enable		: in std_logic;
+		reset			: in std_logic;
+		input			: in std_logic_vector((Data_width-1) downto 0);
+		output		: out std_logic_vector((Data_width-1) downto 0)
+	);
+
+end component;
+begin
+	reg_zero_tres: registrador_carga_paralela generic map (4) port map (clk, enable, reset, input, output(3 downto 0);
+	reg_quatro_sete: registrador_carga_paralela generic map (4) port map (a(7 downto 4), b(7 downto 4), resultado(1));
+	reg_oito_onze: registrador_carga_paralela generic map (4) port map (a(11 downto 8), b(11 downto 8), resultado(2));
+	reg_quinze_doze: registrador_carga_paralela generic map (4) port map (a(15 downto 12), b(15 downto 12), resultado(3));
+end rtl;

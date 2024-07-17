@@ -1,0 +1,84 @@
+|comparador_16bits
+a[0] => comparador:comp_zero_tres.a[0]
+a[1] => comparador:comp_zero_tres.a[1]
+a[2] => comparador:comp_zero_tres.a[2]
+a[3] => comparador:comp_zero_tres.a[3]
+a[4] => comparador:comp_quatro_sete.a[0]
+a[5] => comparador:comp_quatro_sete.a[1]
+a[6] => comparador:comp_quatro_sete.a[2]
+a[7] => comparador:comp_quatro_sete.a[3]
+a[8] => comparador:comp_oito_onze.a[0]
+a[9] => comparador:comp_oito_onze.a[1]
+a[10] => comparador:comp_oito_onze.a[2]
+a[11] => comparador:comp_oito_onze.a[3]
+a[12] => comparador:comp_quinze_doze.a[0]
+a[13] => comparador:comp_quinze_doze.a[1]
+a[14] => comparador:comp_quinze_doze.a[2]
+a[15] => comparador:comp_quinze_doze.a[3]
+b[0] => comparador:comp_zero_tres.b[0]
+b[1] => comparador:comp_zero_tres.b[1]
+b[2] => comparador:comp_zero_tres.b[2]
+b[3] => comparador:comp_zero_tres.b[3]
+b[4] => comparador:comp_quatro_sete.b[0]
+b[5] => comparador:comp_quatro_sete.b[1]
+b[6] => comparador:comp_quatro_sete.b[2]
+b[7] => comparador:comp_quatro_sete.b[3]
+b[8] => comparador:comp_oito_onze.b[0]
+b[9] => comparador:comp_oito_onze.b[1]
+b[10] => comparador:comp_oito_onze.b[2]
+b[11] => comparador:comp_oito_onze.b[3]
+b[12] => comparador:comp_quinze_doze.b[0]
+b[13] => comparador:comp_quinze_doze.b[1]
+b[14] => comparador:comp_quinze_doze.b[2]
+b[15] => comparador:comp_quinze_doze.b[3]
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador_16bits|comparador:comp_zero_tres
+a[0] => Equal0.IN3
+a[1] => Equal0.IN2
+a[2] => Equal0.IN1
+a[3] => Equal0.IN0
+b[0] => Equal0.IN7
+b[1] => Equal0.IN6
+b[2] => Equal0.IN5
+b[3] => Equal0.IN4
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador_16bits|comparador:comp_quatro_sete
+a[0] => Equal0.IN3
+a[1] => Equal0.IN2
+a[2] => Equal0.IN1
+a[3] => Equal0.IN0
+b[0] => Equal0.IN7
+b[1] => Equal0.IN6
+b[2] => Equal0.IN5
+b[3] => Equal0.IN4
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador_16bits|comparador:comp_oito_onze
+a[0] => Equal0.IN3
+a[1] => Equal0.IN2
+a[2] => Equal0.IN1
+a[3] => Equal0.IN0
+b[0] => Equal0.IN7
+b[1] => Equal0.IN6
+b[2] => Equal0.IN5
+b[3] => Equal0.IN4
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador_16bits|comparador:comp_quinze_doze
+a[0] => Equal0.IN3
+a[1] => Equal0.IN2
+a[2] => Equal0.IN1
+a[3] => Equal0.IN0
+b[0] => Equal0.IN7
+b[1] => Equal0.IN6
+b[2] => Equal0.IN5
+b[3] => Equal0.IN4
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,69 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'controladora:controle|estado_atual.verif_senha'
+Slack : -5.580
+TNS   : -171.053
+
+Type  : Slow Model Setup 'clk'
+Slack : -1.730
+TNS   : -14.558
+
+Type  : Slow Model Hold 'clk'
+Slack : -1.659
+TNS   : -2.989
+
+Type  : Slow Model Hold 'controladora:controle|estado_atual.verif_senha'
+Slack : 1.170
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'clk'
+Slack : -1.052
+TNS   : -15.581
+
+Type  : Slow Model Removal 'clk'
+Slack : -0.529
+TNS   : -7.491
+
+Type  : Slow Model Minimum Pulse Width 'clk'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Slow Model Minimum Pulse Width 'controladora:controle|estado_atual.verif_senha'
+Slack : -0.500
+TNS   : -32.000
+
+Type  : Fast Model Setup 'controladora:controle|estado_atual.verif_senha'
+Slack : -2.039
+TNS   : -61.798
+
+Type  : Fast Model Setup 'clk'
+Slack : -0.198
+TNS   : -0.659
+
+Type  : Fast Model Hold 'clk'
+Slack : -1.226
+TNS   : -2.281
+
+Type  : Fast Model Hold 'controladora:controle|estado_atual.verif_senha'
+Slack : 0.562
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'clk'
+Slack : -0.072
+TNS   : -0.540
+
+Type  : Fast Model Removal 'clk'
+Slack : -0.605
+TNS   : -9.204
+
+Type  : Fast Model Minimum Pulse Width 'clk'
+Slack : -1.380
+TNS   : -27.380
+
+Type  : Fast Model Minimum Pulse Width 'controladora:controle|estado_atual.verif_senha'
+Slack : -0.500
+TNS   : -32.000
+
+------------------------------------------------------------

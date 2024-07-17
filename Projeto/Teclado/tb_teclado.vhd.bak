@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+entity teclado is
+end teclado;
+architecture teste of teclado is
+component teclado is 
+	port 
+	(
+		linha 	: in std_logic_vector (3 downto 0);
+		coluna 	: in std_logic_vector (2 downto 0);
+		output	: out std_logic_vector (3 downto 0)
+	);
+end component;
+signal fio_lin, fio_ou: std_logic_vector (3 downto 0); 
+signal fio_col: std_logic_vector (2 downto 0);
+begin
+instancia_teclado: teclado port map(fio_);
+-- Dados de entrada de 4 bits sÃ£o expressos em "hexadecimal" usando "x":
+fio_lin<= x"1" , x"2" after 30ns, x"4" after 90ns, x"8" after 120ns;
+fio_col<= x"1", x"2" after 10ns, x"4" after 20ns,x"1" after 30ns, x"2" after 40ns, x"4" after 50ns,x"1" after 60ns, x"2" after 70ns, x"4" after 80ns,x"1" after 90ns, x"2" after 100ns, x"4" after 110ns;
+end teste;

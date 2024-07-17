@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dB:\UFMG\2024-1\lab sd\cofre-2024\iterador\simulation\modelsim
+Eiterador
+Z1 w1718146254
+Z2 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+Z3 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dB:\UFMG\2024-1\lab sd\cofre-2024\iterador\simulation\modelsim
+Z7 8B:/UFMG/2024-1/lab sd/cofre-2024/iterador/iterador.vhd
+Z8 FB:/UFMG/2024-1/lab sd/cofre-2024/iterador/iterador.vhd
+l0
+L9
+V=n8[87N2C1R2e<aX;e_jC1
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1718146611.037000
+Z11 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/iterador/iterador.vhd|
+Z12 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/iterador/iterador.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 `lX]m[e<^7a;lBGX8C;oI3
+!i10b 1
+Artl
+R2
+R3
+R4
+R5
+DEx4 work 8 iterador 0 22 =n8[87N2C1R2e<aX;e_jC1
+l26
+L25
+V?6o@8OC0LAERdeTB>264z1
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 <jIKHF1GNX5KgeOC@oNAd0
+!i10b 1
+Etb_iterador
+Z15 w1718146393
+R4
+R5
+R6
+Z16 8B:/UFMG/2024-1/lab sd/cofre-2024/iterador/tb_iterador.vhd
+Z17 FB:/UFMG/2024-1/lab sd/cofre-2024/iterador/tb_iterador.vhd
+l0
+L3
+VnA3RVjK4I?Q5WG6S[ZV:P3
+!s100 KCK:QEYB7dOcSXG]UNlA>3
+R9
+31
+!i10b 1
+Z18 !s108 1718146611.417000
+Z19 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/iterador/tb_iterador.vhd|
+Z20 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/iterador/tb_iterador.vhd|
+R13
+R14
+Ateste
+R4
+R5
+DEx4 work 11 tb_iterador 0 22 nA3RVjK4I?Q5WG6S[ZV:P3
+l22
+L5
+VGl;I?QKgOCS]f_ec`hAU33
+!s100 emZOfZab;:RWEFLhDaIXO0
+R9
+31
+!i10b 1
+R18
+R19
+R20
+R13
+R14

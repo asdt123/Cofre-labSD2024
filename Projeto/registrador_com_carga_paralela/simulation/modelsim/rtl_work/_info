@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dB:\UFMG\2024-1\lab sd\cofre-2024\registrador_com_carga_paralela\simulation\modelsim
+Eregistrador_carga_paralela
+Z1 w1718108917
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dB:\UFMG\2024-1\lab sd\cofre-2024\registrador_com_carga_paralela\simulation\modelsim
+Z6 8B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd
+Z7 FB:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd
+l0
+L8
+V68FRiCOn4eREA_WAzGE=W1
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1718110707.297000
+Z10 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd|
+Z11 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 @<728WSUi>3_?M]j4Y>ZD0
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 26 registrador_carga_paralela 0 22 68FRiCOn4eREA_WAzGE=W1
+l27
+L26
+VKM9X[R=6Da8K@EUIK><=:2
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 27GY]HL][5X?Sk?mQPj5]0
+!i10b 1
+Etb_registrador_carga_paralela
+Z14 w1718110685
+R3
+R4
+R5
+Z15 8B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/tb_registrador_carga_paralela.vhd
+Z16 FB:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/tb_registrador_carga_paralela.vhd
+l0
+L3
+VI@So`TSA]3;8^n:Z79]U:3
+!s100 PoTWQdADTVo@Z7L;PA7PQ3
+R8
+31
+!i10b 1
+Z17 !s108 1718110707.738000
+Z18 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/tb_registrador_carga_paralela.vhd|
+Z19 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/tb_registrador_carga_paralela.vhd|
+R12
+R13
+Ateste
+R3
+R4
+DEx4 work 29 tb_registrador_carga_paralela 0 22 I@So`TSA]3;8^n:Z79]U:3
+l26
+L5
+VCL``2IG>WQzEQO?7n=:3Y2
+!s100 ON^3lAjl<S_oUboGo1;e12
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

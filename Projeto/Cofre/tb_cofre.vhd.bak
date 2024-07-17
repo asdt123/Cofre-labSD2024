@@ -1,0 +1,36 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+entity tb_Cofre is
+end tb_Cofre;
+architecture teste of tb_Cofre is
+component Cofre is 
+
+	generic
+	(
+		DATA_WIDTH : natural := 4
+	);
+
+	port 
+	(
+		senha			:in std_logic_vector	((DATA_WIDTH-1) downto 0);
+		insert		:in std_logic;
+		clk			:in std_logic;
+		reset			:in std_logic;
+		
+		ent_hab		:out std_logic;
+		aberto		:out std_logic;
+		bloqueado	:out std_logic;
+		errado		:out std_logic
+	);
+end component;
+signal fio_Cl: std_logic :='0'; 
+signal fio_Re, fio_in, fio_ent, fio_ab, fio_bl, fio_e: std_logic;
+signal fio_se: std_logic_vector(3 downto 0);
+begin
+instancia_Cofre: Cofre generic map (4) port map(fio_se,fio_in, fio_cl, fio_re,fio_ent, fio_ab, fio_bl, fio_e);
+-- Dados de entrada de 4 bits sÃ£o expressos em "hexadecimal" usando "x":
+fio_Cl<= not fio_Cl after 5ns;
+fio_Re<='1','0 after 5ns;
+fio_se<=x"3", x"5" after 65ns;
+fio_in<='0', '1' after 15ns, '0' after 20ns, '1' after 25ns, '0' after 35ns, '1' after 45ns, '0' after 55ns, '1' after 70ns
+end teste;

@@ -1,0 +1,828 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do contador_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 165 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Fatal: (vsim-3421) Value 17 for cnt is out of range 0 to 16.
+#    Time: 175 ns  Iteration: 0  Process: /tb_contador/instancia_contador/line__29 File: B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd
+# Fatal error in Process line__29 at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd line 40
+# 
+# HDL call sequence:
+# Stopped at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd 40 Process line__29
+# 
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+# ** Fatal: (vsim-3421) Value 16 for cnt is out of range 0 to 15.
+#    Time: 165 ns  Iteration: 0  Process: /tb_contador/instancia_contador/line__29 File: B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd
+# Fatal error in Process line__29 at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd line 40
+# 
+# HDL call sequence:
+# Stopped at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd 40 Process line__29
+# 
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+# ** Fatal: (vsim-3421) Value 16 for cnt is out of range 0 to 15.
+#    Time: 165 ns  Iteration: 0  Process: /tb_contador/instancia_contador/line__29 File: B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd
+# Fatal error in Process line__29 at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd line 43
+# 
+# HDL call sequence:
+# Stopped at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd 43 Process line__29
+# 
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+# ** Fatal: (vsim-3421) Value 16 for cnt is out of range 0 to 15.
+#    Time: 165 ns  Iteration: 0  Process: /tb_contador/instancia_contador/line__29 File: B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd
+# Fatal error in Process line__29 at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd line 40
+# 
+# HDL call sequence:
+# Stopped at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd 40 Process line__29
+# 
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+# ** Fatal: (vsim-3421) Value 16 for cnt is out of range 0 to 15.
+#    Time: 165 ns  Iteration: 0  Process: /tb_contador/instancia_contador/line__29 File: B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd
+# Fatal error in Process line__29 at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd line 40
+# 
+# HDL call sequence:
+# Stopped at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd 40 Process line__29
+# 
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+# ** Fatal: (vsim-3421) Value 16 for cnt is out of range 0 to 15.
+#    Time: 165 ns  Iteration: 0  Process: /tb_contador/instancia_contador/line__29 File: B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd
+# Fatal error in Process line__29 at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd line 43
+# 
+# HDL call sequence:
+# Stopped at B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd 43 Process line__29
+# 
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 5 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483648 is out of NATURAL range 0 to 2147483647.
+#    Time: 10 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483647 is out of NATURAL range 0 to 2147483647.
+#    Time: 15 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 15 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483647 is out of NATURAL range 0 to 2147483647.
+#    Time: 20 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 20 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483646 is out of NATURAL range 0 to 2147483647.
+#    Time: 25 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 25 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483646 is out of NATURAL range 0 to 2147483647.
+#    Time: 30 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 30 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483645 is out of NATURAL range 0 to 2147483647.
+#    Time: 35 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 35 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483645 is out of NATURAL range 0 to 2147483647.
+#    Time: 40 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 40 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483644 is out of NATURAL range 0 to 2147483647.
+#    Time: 45 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 45 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483644 is out of NATURAL range 0 to 2147483647.
+#    Time: 50 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 50 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483643 is out of NATURAL range 0 to 2147483647.
+#    Time: 55 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 55 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483643 is out of NATURAL range 0 to 2147483647.
+#    Time: 60 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 60 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483642 is out of NATURAL range 0 to 2147483647.
+#    Time: 65 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 65 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483642 is out of NATURAL range 0 to 2147483647.
+#    Time: 70 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 70 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483641 is out of NATURAL range 0 to 2147483647.
+#    Time: 75 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 75 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483641 is out of NATURAL range 0 to 2147483647.
+#    Time: 80 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 80 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483640 is out of NATURAL range 0 to 2147483647.
+#    Time: 85 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 85 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483640 is out of NATURAL range 0 to 2147483647.
+#    Time: 90 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 90 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483639 is out of NATURAL range 0 to 2147483647.
+#    Time: 95 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 95 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483639 is out of NATURAL range 0 to 2147483647.
+#    Time: 100 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 100 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483638 is out of NATURAL range 0 to 2147483647.
+#    Time: 105 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 105 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483638 is out of NATURAL range 0 to 2147483647.
+#    Time: 110 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 110 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483637 is out of NATURAL range 0 to 2147483647.
+#    Time: 115 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 115 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483637 is out of NATURAL range 0 to 2147483647.
+#    Time: 120 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483636 is out of NATURAL range 0 to 2147483647.
+#    Time: 125 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 125 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483636 is out of NATURAL range 0 to 2147483647.
+#    Time: 130 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 130 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483635 is out of NATURAL range 0 to 2147483647.
+#    Time: 135 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 135 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483635 is out of NATURAL range 0 to 2147483647.
+#    Time: 140 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 140 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483634 is out of NATURAL range 0 to 2147483647.
+#    Time: 145 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 145 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483634 is out of NATURAL range 0 to 2147483647.
+#    Time: 150 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 150 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483633 is out of NATURAL range 0 to 2147483647.
+#    Time: 155 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 155 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483633 is out of NATURAL range 0 to 2147483647.
+#    Time: 160 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 160 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483632 is out of NATURAL range 0 to 2147483647.
+#    Time: 165 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 165 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483632 is out of NATURAL range 0 to 2147483647.
+#    Time: 170 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 170 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483631 is out of NATURAL range 0 to 2147483647.
+#    Time: 175 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 175 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483631 is out of NATURAL range 0 to 2147483647.
+#    Time: 180 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 180 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483630 is out of NATURAL range 0 to 2147483647.
+#    Time: 185 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 185 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483630 is out of NATURAL range 0 to 2147483647.
+#    Time: 190 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 190 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483629 is out of NATURAL range 0 to 2147483647.
+#    Time: 195 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 195 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483629 is out of NATURAL range 0 to 2147483647.
+#    Time: 200 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 200 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483628 is out of NATURAL range 0 to 2147483647.
+#    Time: 205 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 205 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483628 is out of NATURAL range 0 to 2147483647.
+#    Time: 210 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 210 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483627 is out of NATURAL range 0 to 2147483647.
+#    Time: 215 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 215 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483627 is out of NATURAL range 0 to 2147483647.
+#    Time: 220 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 220 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483626 is out of NATURAL range 0 to 2147483647.
+#    Time: 225 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 225 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483626 is out of NATURAL range 0 to 2147483647.
+#    Time: 230 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 230 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483625 is out of NATURAL range 0 to 2147483647.
+#    Time: 235 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 235 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483625 is out of NATURAL range 0 to 2147483647.
+#    Time: 240 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 240 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483624 is out of NATURAL range 0 to 2147483647.
+#    Time: 245 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 245 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483624 is out of NATURAL range 0 to 2147483647.
+#    Time: 250 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 250 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483623 is out of NATURAL range 0 to 2147483647.
+#    Time: 255 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 255 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483623 is out of NATURAL range 0 to 2147483647.
+#    Time: 260 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 260 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483622 is out of NATURAL range 0 to 2147483647.
+#    Time: 265 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 265 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483622 is out of NATURAL range 0 to 2147483647.
+#    Time: 270 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 270 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483621 is out of NATURAL range 0 to 2147483647.
+#    Time: 275 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 275 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483621 is out of NATURAL range 0 to 2147483647.
+#    Time: 280 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 280 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483620 is out of NATURAL range 0 to 2147483647.
+#    Time: 285 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 285 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483620 is out of NATURAL range 0 to 2147483647.
+#    Time: 290 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 290 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483619 is out of NATURAL range 0 to 2147483647.
+#    Time: 295 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 295 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Error: (vsim-86) Arg Value -2147483619 is out of NATURAL range 0 to 2147483647.
+#    Time: 300 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 300 ns  Iteration: 0  Instance: /tb_contador/instancia_contador
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+do contador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_contador
+# -- Compiling architecture teste of tb_contador
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(27): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/contador/tb_contador.vhd(28): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_contador
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_contador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_contador(teste)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns

@@ -1,0 +1,29 @@
+|controladora
+clk => fechar_passado.CLK
+clk => teclado_passado.CLK
+clk => insert_passado.CLK
+clk => estado_atual~1.DATAIN
+insert => process_1.IN1
+insert => insert_passado.DATAIN
+reset => estado_atual~3.DATAIN
+reset => insert_passado.ENA
+reset => teclado_passado.ENA
+reset => fechar_passado.ENA
+igual => Selector1.IN3
+igual => estado_futuro.erro.DATAB
+lim_erro => Selector2.IN3
+lim_erro => Selector0.IN3
+fechar => process_1.IN1
+fechar => fechar_passado.DATAIN
+teclado => process_1.IN1
+teclado => teclado_passado.DATAIN
+ent_lib <= ent_lib.DB_MAX_OUTPUT_PORT_TYPE
+load_ent <= load_ent.DB_MAX_OUTPUT_PORT_TYPE
+res_ent <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+res_cont <= res_cont.DB_MAX_OUTPUT_PORT_TYPE
+clk_cont <= clk_cont.DB_MAX_OUTPUT_PORT_TYPE
+bloqueado <= bloqueado.DB_MAX_OUTPUT_PORT_TYPE
+errado <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+aberto <= aberto.DB_MAX_OUTPUT_PORT_TYPE
+
+

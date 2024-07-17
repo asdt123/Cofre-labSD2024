@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {registrador_carga_paralela.vho registrador_carga_paralela_vhd.sdo}}
+	{{"Fast Model"} {registrador_carga_paralela_fast.vho registrador_carga_paralela_vhd_fast.sdo}}
+}

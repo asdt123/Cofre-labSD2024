@@ -1,0 +1,114 @@
+m255
+K3
+13
+cModel Technology
+Z0 dB:\UFMG\2024-1\lab sd\cofre-2024\comparador_16bits\simulation\modelsim
+Ecomparador
+Z1 w1717335530
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dB:\UFMG\2024-1\lab sd\cofre-2024\comparador_16bits\simulation\modelsim
+Z6 8B:/UFMG/2024-1/lab sd/cofre-2024/comparador/comparador.vhd
+Z7 FB:/UFMG/2024-1/lab sd/cofre-2024/comparador/comparador.vhd
+l0
+L8
+V[D=DgE4eiLTKjPm4;YO1j3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1718153632.763000
+Z10 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/comparador/comparador.vhd|
+Z11 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/comparador/comparador.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 f@ZL?Z7FI9kG1[DfY1kmU0
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 10 comparador 0 22 [D=DgE4eiLTKjPm4;YO1j3
+l25
+L24
+VBVNkVDH0b5=4eN;62M3Cb0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 1JdeKmKhbCOA[iFlIaMe82
+!i10b 1
+Ecomparador_16bits
+Z14 w1718153322
+R2
+R3
+R4
+R5
+Z15 8B:/UFMG/2024-1/lab sd/cofre-2024/comparador_16bits/comparador_16bits.vhd
+Z16 FB:/UFMG/2024-1/lab sd/cofre-2024/comparador_16bits/comparador_16bits.vhd
+l0
+L8
+VGhN1lQ@jo_iF;VGGe@e]O0
+R8
+31
+Z17 !s108 1718153633.167000
+Z18 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/comparador_16bits/comparador_16bits.vhd|
+Z19 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/comparador_16bits/comparador_16bits.vhd|
+R12
+R13
+!s100 nTi4V8P5Kh64aW^nFF5zK0
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 17 comparador_16bits 0 22 GhN1lQ@jo_iF;VGGe@e]O0
+l34
+L17
+VJEIjM?9cbYYDJeDiNoc^d3
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 hY2WGeNFaDcS:n9aeJLQ73
+!i10b 1
+Etb_comparador_16bits
+Z20 w1718153500
+R3
+R4
+R5
+Z21 8B:/UFMG/2024-1/lab sd/cofre-2024/comparador_16bits/tb_comparador_16bits.vhd
+Z22 FB:/UFMG/2024-1/lab sd/cofre-2024/comparador_16bits/tb_comparador_16bits.vhd
+l0
+L3
+VMXAeo]:zQmDQ1KBFFgPbg1
+!s100 nS[V7QG0G_3eEiZn_IW?Q0
+R8
+31
+!i10b 1
+Z23 !s108 1718153633.493000
+Z24 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/comparador_16bits/tb_comparador_16bits.vhd|
+Z25 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/comparador_16bits/tb_comparador_16bits.vhd|
+R12
+R13
+Ateste
+R3
+R4
+DEx4 work 20 tb_comparador_16bits 0 22 MXAeo]:zQmDQ1KBFFgPbg1
+l16
+L5
+VToOmNi:ShKl6o_i44omVM0
+!s100 8KiQ;9:ChF[j8>jVG1jRg2
+R8
+31
+!i10b 1
+R23
+R24
+R25
+R12
+R13

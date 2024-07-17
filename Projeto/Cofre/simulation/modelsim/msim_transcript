@@ -1,0 +1,397 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Cofre_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/teclado_chaveado.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Teclado_chaveado
+# -- Compiling architecture rtl of Teclado_chaveado
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registrador_carga_paralela
+# -- Compiling architecture rtl of registrador_carga_paralela
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/registrador_16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registrador_16bits
+# -- Compiling architecture rtl of registrador_16bits
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/BCD_7seg/BCD_7seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Bcd_7seg
+# -- Compiling architecture with_select_bcd7seg of Bcd_7seg
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/comparador_16bits/comparador_16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity comparador_16bits
+# -- Compiling architecture rtl of comparador_16bits
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/comparador/comparador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity comparador
+# -- Compiling architecture rtl of comparador
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/controladora/controladora.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controladora
+# -- Compiling architecture rtl of controladora
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/Datapath/Datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Datapath
+# -- Compiling architecture rtl of Datapath
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/Cofre.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Cofre
+# -- Compiling architecture rtl of Cofre
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_Cofre
+# -- Compiling architecture teste of tb_Cofre
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(31): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(32): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(32): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_cofre
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_cofre 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_cofre(teste)
+# Loading ieee.numeric_std(body)
+# Loading work.cofre(rtl)
+# Loading work.datapath(rtl)
+# Loading work.teclado_chaveado(rtl)
+# Loading work.comparador(rtl)
+# Loading work.registrador_16bits(rtl)
+# Loading work.registrador_carga_paralela(rtl)
+# Loading work.comparador_16bits(rtl)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# Loading work.bcd_7seg(with_select_bcd7seg)
+# Loading work.controladora(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 150 ns
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_tent
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_senha/comp_quinze_doze
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_senha/comp_oito_onze
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_senha/comp_quatro_sete
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_senha/comp_zero_tres
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_insert
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_numero
+do wa
+# Cannot open macro file: wa
+do wave.do
+do Cofre_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/teclado_chaveado.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Teclado_chaveado
+# -- Compiling architecture rtl of Teclado_chaveado
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registrador_carga_paralela
+# -- Compiling architecture rtl of registrador_carga_paralela
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/registrador_16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registrador_16bits
+# -- Compiling architecture rtl of registrador_16bits
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/BCD_7seg/BCD_7seg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Bcd_7seg
+# -- Compiling architecture with_select_bcd7seg of Bcd_7seg
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/comparador_16bits/comparador_16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity comparador_16bits
+# -- Compiling architecture rtl of comparador_16bits
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/contador/contador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity contador
+# -- Compiling architecture rtl of contador
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/comparador/comparador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity comparador
+# -- Compiling architecture rtl of comparador
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/controladora/controladora.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity controladora
+# -- Compiling architecture rtl of controladora
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/Datapath/Datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Datapath
+# -- Compiling architecture rtl of Datapath
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/Cofre.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Cofre
+# -- Compiling architecture rtl of Cofre
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_Cofre
+# -- Compiling architecture teste of tb_Cofre
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(31): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(32): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(32): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(33): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Cofre/tb_cofre.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_cofre
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_cofre 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_cofre(teste)
+# Loading ieee.numeric_std(body)
+# Loading work.cofre(rtl)
+# Loading work.datapath(rtl)
+# Loading work.teclado_chaveado(rtl)
+# Loading work.comparador(rtl)
+# Loading work.registrador_16bits(rtl)
+# Loading work.registrador_carga_paralela(rtl)
+# Loading work.comparador_16bits(rtl)
+# Loading ieee.math_real(body)
+# Loading work.contador(rtl)
+# Loading work.bcd_7seg(with_select_bcd7seg)
+# Loading work.controladora(rtl)
+# 
+# do wave.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate /tb_cofre/fio_Cl
+# add wave -noupdate -divider entradas
+# add wave -noupdate /tb_cofre/fio_in
+# add wave -noupdate /tb_cofre/fio_tec
+# add wave -noupdate -radix hexadecimal /tb_cofre/instancia_Cofre/fluxo_dados/saida_teclado
+# add wave -noupdate -radix hexadecimal -childformat {{/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(15) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(14) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(13) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(12) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(11) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(10) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(9) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(8) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(7) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(6) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(5) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(4) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(3) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(2) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(1) -radix unsigned} {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(0) -radix unsigned}} -subitemconfig {/tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(15) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(14) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(13) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(12) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(11) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(10) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(9) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(8) {-height 15 -radix 
+# unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(7) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(6) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(5) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(4) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(3) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(2) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(1) {-height 15 -radix unsigned} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador(0) {-height 15 -radix unsigned}} /tb_cofre/instancia_Cofre/fluxo_dados/saida_registrador
+# add wave -noupdate /tb_cofre/fio_Re
+# add wave -noupdate /tb_cofre/fio_fe
+# add wave -noupdate -divider {saidas controladora}
+# add wave -noupdate /tb_cofre/fio_ent
+# add wave -noupdate /tb_cofre/instancia_Cofre/fluxo_dados/load_reg
+# add wave -noupdate /tb_cofre/instancia_Cofre/fluxo_dados/reset_reg
+# add wave -noupdate /tb_cofre/instancia_Cofre/fluxo_dados/cont_clk
+# add wave -noupdate /tb_cofre/instancia_Cofre/fluxo_dados/cont_reset
+# add wave -noupdate /tb_cofre/fio_ab
+# add wave -noupdate /tb_cofre/fio_bl
+# add wave -noupdate /tb_cofre/fio_e
+# add wave -noupdate -divider {saidas datapath}
+# add wave -noupdate /tb_cofre/instancia_Cofre/fluxo_dados/lim_tent
+# add wave -noupdate /tb_cofre/fio_leds
+# add wave -noupdate /tb_cofre/instancia_Cofre/fluxo_dados/digito
+# add wave -noupdate /tb_cofre/instancia_Cofre/fluxo_dados/insert
+# add wave -noupdate /tb_cofre/instancia_Cofre/fluxo_dados/comp_senha
+# add wave -noupdate -divider estados
+# add wave -noupdate /tb_cofre/instancia_Cofre/controle/estado_atual
+# add wave -noupdate /tb_cofre/instancia_Cofre/controle/estado_futuro
+# add wave -noupdate -divider misc
+# add wave -noupdate /tb_cofre/instancia_Cofre/controle/insert
+# add wave -noupdate /tb_cofre/instancia_Cofre/controle/insert_passado
+# add wave -noupdate /tb_cofre/instancia_Cofre/controle/teclado
+# add wave -noupdate /tb_cofre/instancia_Cofre/controle/teclado_passado
+# add wave -noupdate /tb_cofre/instancia_Cofre/controle/fechar
+# add wave -noupdate /tb_cofre/instancia_Cofre/controle/fechar_passado
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {30741 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 150
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ps
+# update
+# WaveRestoreZoom {0 ps} {157500 ps}
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 80 ns
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_tent
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_senha/comp_quinze_doze
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_senha/comp_oito_onze
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_senha/comp_quatro_sete
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_senha/comp_zero_tres
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_insert
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cofre/instancia_Cofre/fluxo_dados/verif_numero
+add wave -position 19  sim:/tb_cofre/instancia_Cofre/fluxo_dados/primeiro_numero/entrada
+add wave -position 20  sim:/tb_cofre/instancia_Cofre/fluxo_dados/segundo_numero/entrada
+add wave -position 21  sim:/tb_cofre/instancia_Cofre/fluxo_dados/terceiro_numero/entrada
+add wave -position 23  sim:/tb_cofre/instancia_Cofre/fluxo_dados/quarto_numero/entrada

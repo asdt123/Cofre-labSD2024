@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 dB:\UFMG\2024-1\lab sd\cofre-2024\Teclado-chaves\simulation\modelsim
+Etb_teclado_chaveado
+Z1 w1718152123
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dB:\UFMG\2024-1\lab sd\cofre-2024\Teclado-chaves\simulation\modelsim
+Z5 8B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd
+Z6 FB:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd
+l0
+L3
+VUHZ:9@KIQC?HS:lhNe1A[1
+!s100 bI6Q9>LE^:VJPim`Pi:nJ0
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1718152151.145000
+Z9 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd|
+Z10 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Ateste
+R2
+R3
+DEx4 work 19 tb_teclado_chaveado 0 22 UHZ:9@KIQC?HS:lhNe1A[1
+l16
+L5
+VI8PHO5damICL6<mbLonI62
+!s100 i]XY3OFU?152zFJ:9_mHC2
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Eteclado_chaveado
+Z13 w1718152122
+R2
+R3
+R4
+Z14 8B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/teclado_chaveado.vhd
+Z15 FB:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/teclado_chaveado.vhd
+l0
+L4
+VieiRIiI<=hJdWCm^5Pjk<0
+R7
+31
+Z16 !s108 1718152150.703000
+Z17 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/teclado_chaveado.vhd|
+Z18 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/teclado_chaveado.vhd|
+R11
+R12
+!s100 89FA<GG9CY]?O9Iae=Of61
+!i10b 1
+Artl
+R2
+R3
+DEx4 work 16 teclado_chaveado 0 22 ieiRIiI<=hJdWCm^5Pjk<0
+l13
+L12
+V?N0nkBPAVgGdeNd1^zK>d1
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 `W?m@Zo6bZan3JBIcLJkB1
+!i10b 1

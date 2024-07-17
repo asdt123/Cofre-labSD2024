@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dB:\UFMG\2024-1\lab sd\cofre-2024\comparador\simulation\modelsim
+Ecomparador
+Z1 w1717335530
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dB:\UFMG\2024-1\lab sd\cofre-2024\comparador\simulation\modelsim
+Z6 8B:/UFMG/2024-1/lab sd/cofre-2024/comparador/comparador.vhd
+Z7 FB:/UFMG/2024-1/lab sd/cofre-2024/comparador/comparador.vhd
+l0
+L8
+V[D=DgE4eiLTKjPm4;YO1j3
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1717336373.526000
+Z10 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/comparador/comparador.vhd|
+Z11 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/comparador/comparador.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 f@ZL?Z7FI9kG1[DfY1kmU0
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 10 comparador 0 22 [D=DgE4eiLTKjPm4;YO1j3
+l25
+L24
+VBVNkVDH0b5=4eN;62M3Cb0
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 1JdeKmKhbCOA[iFlIaMe82
+!i10b 1
+Etb_comparador
+Z14 w1717336056
+R3
+R4
+R5
+Z15 8B:/UFMG/2024-1/lab sd/cofre-2024/comparador/tb_comparador.vhd
+Z16 FB:/UFMG/2024-1/lab sd/cofre-2024/comparador/tb_comparador.vhd
+l0
+L3
+VXXVkCCUhI9RNen63[P`YH0
+!s100 `N?FZ3`CVAVD]`SSoTHZ02
+R8
+31
+!i10b 1
+Z17 !s108 1717336373.952000
+Z18 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/comparador/tb_comparador.vhd|
+Z19 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/comparador/tb_comparador.vhd|
+R12
+R13
+Ateste
+R3
+R4
+DEx4 work 13 tb_comparador 0 22 XXVkCCUhI9RNen63[P`YH0
+l21
+L5
+VN]aV4mi0`hJMBhmHP@`5J0
+!s100 QQ=cS7W3_ZYDT_a87M^EB2
+R8
+31
+!i10b 1
+R17
+R18
+R19
+R12
+R13

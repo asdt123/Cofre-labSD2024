@@ -1,0 +1,64 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do teclado_chaveado_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/teclado_chaveado.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Teclado_chaveado
+# -- Compiling architecture rtl of Teclado_chaveado
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_Teclado_chaveado
+# -- Compiling architecture teste of tb_Teclado_chaveado
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(19): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/Teclado-chaves/tb_teclado_chaveado.vhd(20): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_teclado_chaveado
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_teclado_chaveado 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_teclado_chaveado(teste)
+# Loading work.teclado_chaveado(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all

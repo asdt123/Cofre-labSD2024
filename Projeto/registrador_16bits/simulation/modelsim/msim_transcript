@@ -1,0 +1,149 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do registrador_16bits_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registrador_carga_paralela
+# -- Compiling architecture rtl of registrador_carga_paralela
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/registrador_16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registrador_16bits
+# -- Compiling architecture rtl of registrador_16bits
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_registrador_16bits
+# -- Compiling architecture teste of tb_registrador_16bits
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(23): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(24): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(25): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(26): (vcom-1272) Length of expected is 16; length of actual is 4.
+# 
+# ** Error: B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(26): (vcom-1272) Length of expected is 16; length of actual is 4.
+# 
+# ** Error: B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(27): VHDL Compiler exiting
+# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./registrador_16bits_run_msim_rtl_vhdl.do line 11
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd}"
+do registrador_16bits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registrador_carga_paralela
+# -- Compiling architecture rtl of registrador_carga_paralela
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/registrador_16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registrador_16bits
+# -- Compiling architecture rtl of registrador_16bits
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_registrador_16bits
+# -- Compiling architecture teste of tb_registrador_16bits
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(23): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(24): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(25): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(26): (vcom-1272) Length of expected is 16; length of actual is 4.
+# 
+# ** Error: B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(26): (vcom-1272) Length of expected is 16; length of actual is 4.
+# 
+# ** Error: B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(27): VHDL Compiler exiting
+# ** Error: C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./registrador_16bits_run_msim_rtl_vhdl.do line 11
+# C:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd}"
+do registrador_16bits_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registrador_carga_paralela
+# -- Compiling architecture rtl of registrador_carga_paralela
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/registrador_16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registrador_16bits
+# -- Compiling architecture rtl of registrador_16bits
+# 
+# vcom -93 -work work {B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_registrador_16bits
+# -- Compiling architecture teste of tb_registrador_16bits
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(23): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(24): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(25): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd(26): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  tb_registrador_16bits
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps tb_registrador_16bits 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_registrador_16bits(teste)
+# Loading ieee.numeric_std(body)
+# Loading work.registrador_16bits(rtl)
+# Loading work.registrador_carga_paralela(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 70 ns

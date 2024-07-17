@@ -1,0 +1,23 @@
+|registrador_carga_paralela
+clk => output[0]~reg0.CLK
+clk => output[1]~reg0.CLK
+clk => output[2]~reg0.CLK
+clk => output[3]~reg0.CLK
+enable => output[3]~reg0.ENA
+enable => output[2]~reg0.ENA
+enable => output[1]~reg0.ENA
+enable => output[0]~reg0.ENA
+reset => output[0]~reg0.ACLR
+reset => output[1]~reg0.ACLR
+reset => output[2]~reg0.ACLR
+reset => output[3]~reg0.ACLR
+input[0] => output[0]~reg0.DATAIN
+input[1] => output[1]~reg0.DATAIN
+input[2] => output[2]~reg0.DATAIN
+input[3] => output[3]~reg0.DATAIN
+output[0] <= output[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

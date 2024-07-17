@@ -1,0 +1,133 @@
+-- Quartus II VHDL Template
+-- Four-estado_atual Moore estado_atual Machine
+
+-- A Moore machine's outputs are dependent only on the current estado_atual.
+-- The output is written only when the estado_atual changes.  (estado_atual
+-- transitions are synchronous.)
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity controladora is
+
+	port(
+		clk		:		in	std_logic;
+		insert	:		in	std_logic;
+		reset		:		in	std_logic;
+		igual		:		in	std_logic;
+		lim_erro	:		in	std_logic;
+		
+		ent_lib	:		out	std_logic;
+		res_cont	:		out	std_logic;
+		clk_cont	:		out	std_logic;
+		bloqueado:		out	std_logic;
+		errado	:		out	std_logic;
+		aberto	:		out	std_logic
+	);
+
+end entity;
+
+architecture rtl of controladora is
+
+	-- Build an enumerated type for the estado_atual machine
+	type estado is (s0, s1, s2, s3, s4, s5);
+
+	-- Register to hold the current estado_atual
+	signal estado_atual   : estado;
+	signal estado_futuro  : estado;
+	
+	signal insert_passado : std_logic;
+
+begin
+
+	-- Logic to advance to the next estado_atual
+	process (clk, reset)
+	begin
+		if reset = '1' then
+			estado_atual <= s0;
+		elsif (rising_edge(clk)) then
+			insert_passado <=insert;
+			estado_atual <= estado_futuro;
+		end if;
+	end process;
+
+	-- Output depends solely on the current estado_atual
+	process (estado_atual)
+	begin
+		case estado_atual is
+			when s0 =>
+				if reset = '0' then
+					ent_lib:='0'
+					aberto:='1';
+					bloqueado:='1';
+					errado:='1';
+					res_cont:='1';
+					clk_cont:='0';
+					estado_futuro:=s1;
+				end if;
+			when s1 =>
+				if insert = '1' and insert_passado = '0' then
+					ent_lib:='1'
+					aberto:='0';
+					bloqueado:='0';
+					errado:='0';
+					res_cont:='0';
+					clk_cont:='0';
+					estado_futuro:=s2;
+				end if;
+			when s2 =>
+				if igual='0' then
+					ent_lib:='0'
+					aberto:='0';
+					bloqueado:='0';
+					errado:='1';
+					res_cont:='0';
+					clk_cont:='1';
+					estado_futuro:=s3;
+				else
+					ent_lib:='0'
+					aberto:='1';
+					bloqueado:='0';
+					errado:='0';
+					res_cont:='0';
+					clk_cont:='0';
+					estado_futuro:=s4;
+				end if;
+			when s3 =>
+				if lim_erro='1':
+					ent_lib:='0'
+					aberto:='0';
+					bloqueado:='1';
+					errado:='1';
+					res_cont:='0';
+					clk_cont:='1';
+					estado_futuro:=s5;
+				else
+					ent_lib:='0'
+					aberto:='0';
+					bloqueado:='0';
+					errado:='1';
+					res_cont:='0';
+					clk_cont:='1';
+					estado_futuro:=s1;
+				end if;
+			when s4 =>
+				ent_lib:='0'
+				aberto:='1';
+				bloqueado:='0';
+				errado:='0';
+				res_cont:='0';
+				clk_cont:='0';
+				estado_futuro:=s4;
+			when s5 =>
+				ent_lib:='0'
+				aberto:='0';
+				bloqueado:='1';
+				errado:='1';
+				res_cont:='0';
+				clk_cont:='0';
+				estado_futuro:=s5;
+		end case;
+	end process;
+
+end rtl;

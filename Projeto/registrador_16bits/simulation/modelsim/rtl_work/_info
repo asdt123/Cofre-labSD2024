@@ -1,0 +1,114 @@
+m255
+K3
+13
+cModel Technology
+Z0 dB:\UFMG\2024-1\lab sd\cofre-2024\registrador_16bits\simulation\modelsim
+Eregistrador_16bits
+Z1 w1718193556
+Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dB:\UFMG\2024-1\lab sd\cofre-2024\registrador_16bits\simulation\modelsim
+Z6 8B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/registrador_16bits.vhd
+Z7 FB:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/registrador_16bits.vhd
+l0
+L6
+V?8Wff]CHmcBcQg_2?Q8h31
+Z8 OV;C;10.1d;51
+31
+Z9 !s108 1718194378.117000
+Z10 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/registrador_16bits.vhd|
+Z11 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/registrador_16bits.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+!s100 9RJXl_a_Wh:hDQPhW`ODC1
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 18 registrador_16bits 0 22 ?8Wff]CHmcBcQg_2?Q8h31
+l36
+L17
+ViY=]5m58]h8eNbA]L9hbm1
+R8
+31
+R9
+R10
+R11
+R12
+R13
+!s100 WdQXjzF0JTTRb55>@NVJJ1
+!i10b 1
+Eregistrador_carga_paralela
+Z14 w1718108917
+R2
+R3
+R4
+R5
+Z15 8B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd
+Z16 FB:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd
+l0
+L8
+V68FRiCOn4eREA_WAzGE=W1
+R8
+31
+Z17 !s108 1718194377.183000
+Z18 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd|
+Z19 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/registrador_com_carga_paralela/registrador_carga_paralela.vhd|
+R12
+R13
+!s100 @<728WSUi>3_?M]j4Y>ZD0
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 26 registrador_carga_paralela 0 22 68FRiCOn4eREA_WAzGE=W1
+l27
+L26
+VKM9X[R=6Da8K@EUIK><=:2
+R8
+31
+R17
+R18
+R19
+R12
+R13
+!s100 27GY]HL][5X?Sk?mQPj5]0
+!i10b 1
+Etb_registrador_16bits
+Z20 w1718194259
+R3
+R4
+R5
+Z21 8B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd
+Z22 FB:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd
+l0
+L3
+VMSKcC<?DF`>l>2[BE?Mok2
+!s100 2Ri;[^bM[aX8egaSk2YZ61
+R8
+31
+!i10b 1
+Z23 !s108 1718194378.538000
+Z24 !s90 -reportprogress|300|-93|-work|work|B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd|
+Z25 !s107 B:/UFMG/2024-1/lab sd/cofre-2024/registrador_16bits/tb_registrador_16bits.vhd|
+R12
+R13
+Ateste
+R3
+R4
+DEx4 work 21 tb_registrador_16bits 0 22 MSKcC<?DF`>l>2[BE?Mok2
+l20
+L5
+V>af7RIbkA>]jlXKn81QPM1
+!s100 <nVNKVU6cX^QR]23>j7N;2
+R8
+31
+!i10b 1
+R23
+R24
+R25
+R12
+R13

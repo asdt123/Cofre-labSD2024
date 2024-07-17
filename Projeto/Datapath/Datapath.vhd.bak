@@ -1,0 +1,66 @@
+-- Quartus II VHDL Template
+-- Signed Adder
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Datapath is
+
+	generic
+	(
+		DATA_WIDTH : natural := 4
+	);
+
+	port 
+	(
+		senha			:in std_logic_vector	((DATA_WIDTH-1) downto 0);
+		cont_clk		:in std_logic;
+		cont_reset	:in std_logic;
+		
+		comp_senha	:out std_logic;
+		lim_tent		:out std_logic;
+	);
+
+end entity;
+
+architecture rtl of signed_adder is
+component comparador is
+
+	generic
+	(
+		DATA_WIDTH : natural := 4
+	);
+
+	port 
+	(
+		a	   : in std_logic_vector	((DATA_WIDTH-1) downto 0);
+		b	   : in std_logic_vector	((DATA_WIDTH-1) downto 0);
+		result : out std_logic
+	);
+end component;
+
+component contador is
+
+	generic
+	(
+		DATA_WIDTH:natural:= 4
+	);
+
+	port
+	(
+		clk		  : in std_logic;
+		reset	  : in std_logic;
+		enable	  : in std_logic;
+		q		  : out std_logic_vector ((Data_width-1) downto 0)
+	);
+
+	signal saida_contador
+end component;
+
+begin
+	comp_senha: comparador generic map (Data_width) port map(senha, x"5",comp_senha);
+	cont_tent: contador generic map (3) port map(cont_clk, cont_reset, '1', saida_contador);
+	comp_tent: comparador generic map (3) port map(saida_contador, x"5",lim_tent);
+
+end rtl;

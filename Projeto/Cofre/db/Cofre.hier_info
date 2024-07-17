@@ -1,0 +1,673 @@
+|Cofre
+input_linha[0] => Datapath:fluxo_dados.teclado_lin[0]
+input_linha[1] => Datapath:fluxo_dados.teclado_lin[1]
+input_linha[2] => Datapath:fluxo_dados.teclado_lin[2]
+input_linha[3] => Datapath:fluxo_dados.teclado_lin[3]
+clk => Datapath:fluxo_dados.clk
+clk => controladora:controle.clk
+reset => controladora:controle.reset
+fechar => controladora:controle.fechar
+input_col[0] => Datapath:fluxo_dados.teclado_col[0]
+input_col[1] => Datapath:fluxo_dados.teclado_col[1]
+input_col[2] => Datapath:fluxo_dados.teclado_col[2]
+ent_hab <= controladora:controle.ent_lib
+aberto <= controladora:controle.aberto
+bloqueado <= controladora:controle.bloqueado
+leds_7seg[0] <= Datapath:fluxo_dados.leds_7seg[0]
+leds_7seg[1] <= Datapath:fluxo_dados.leds_7seg[1]
+leds_7seg[2] <= Datapath:fluxo_dados.leds_7seg[2]
+leds_7seg[3] <= Datapath:fluxo_dados.leds_7seg[3]
+leds_7seg[4] <= Datapath:fluxo_dados.leds_7seg[4]
+leds_7seg[5] <= Datapath:fluxo_dados.leds_7seg[5]
+leds_7seg[6] <= Datapath:fluxo_dados.leds_7seg[6]
+leds_7seg[7] <= Datapath:fluxo_dados.leds_7seg[7]
+leds_7seg[8] <= Datapath:fluxo_dados.leds_7seg[8]
+leds_7seg[9] <= Datapath:fluxo_dados.leds_7seg[9]
+leds_7seg[10] <= Datapath:fluxo_dados.leds_7seg[10]
+leds_7seg[11] <= Datapath:fluxo_dados.leds_7seg[11]
+leds_7seg[12] <= Datapath:fluxo_dados.leds_7seg[12]
+leds_7seg[13] <= Datapath:fluxo_dados.leds_7seg[13]
+leds_7seg[14] <= Datapath:fluxo_dados.leds_7seg[14]
+leds_7seg[15] <= Datapath:fluxo_dados.leds_7seg[15]
+leds_7seg[16] <= Datapath:fluxo_dados.leds_7seg[16]
+leds_7seg[17] <= Datapath:fluxo_dados.leds_7seg[17]
+leds_7seg[18] <= Datapath:fluxo_dados.leds_7seg[18]
+leds_7seg[19] <= Datapath:fluxo_dados.leds_7seg[19]
+leds_7seg[20] <= Datapath:fluxo_dados.leds_7seg[20]
+leds_7seg[21] <= Datapath:fluxo_dados.leds_7seg[21]
+leds_7seg[22] <= Datapath:fluxo_dados.leds_7seg[22]
+leds_7seg[23] <= Datapath:fluxo_dados.leds_7seg[23]
+leds_7seg[24] <= Datapath:fluxo_dados.leds_7seg[24]
+leds_7seg[25] <= Datapath:fluxo_dados.leds_7seg[25]
+leds_7seg[26] <= Datapath:fluxo_dados.leds_7seg[26]
+leds_7seg[27] <= Datapath:fluxo_dados.leds_7seg[27]
+errado <= controladora:controle.errado
+
+
+|Cofre|Datapath:fluxo_dados
+teclado_lin[0] => Teclado_chaveado:entrada_chave.linha[0]
+teclado_lin[1] => Teclado_chaveado:entrada_chave.linha[1]
+teclado_lin[2] => Teclado_chaveado:entrada_chave.linha[2]
+teclado_lin[3] => Teclado_chaveado:entrada_chave.linha[3]
+clk => registrador_16bits:registrador_senha.clk
+load_reg => registrador_16bits:registrador_senha.load
+reset_reg => registrador_16bits:registrador_senha.reset
+cont_clk => contador:cont_tent.clk
+cont_reset => contador:cont_tent.reset
+teclado_col[0] => Teclado_chaveado:entrada_chave.col_ativa[0]
+teclado_col[1] => Teclado_chaveado:entrada_chave.col_ativa[1]
+teclado_col[2] => Teclado_chaveado:entrada_chave.col_ativa[2]
+digito <= comparador:verif_numero.result
+insert <= comparador:verif_insert.result
+comp_senha <= comparador_16bits:verif_senha.result
+leds_7seg[0] <= Bcd_7seg:primeiro_numero.saida[0]
+leds_7seg[1] <= Bcd_7seg:primeiro_numero.saida[1]
+leds_7seg[2] <= Bcd_7seg:primeiro_numero.saida[2]
+leds_7seg[3] <= Bcd_7seg:primeiro_numero.saida[3]
+leds_7seg[4] <= Bcd_7seg:primeiro_numero.saida[4]
+leds_7seg[5] <= Bcd_7seg:primeiro_numero.saida[5]
+leds_7seg[6] <= Bcd_7seg:primeiro_numero.saida[6]
+leds_7seg[7] <= Bcd_7seg:segundo_numero.saida[0]
+leds_7seg[8] <= Bcd_7seg:segundo_numero.saida[1]
+leds_7seg[9] <= Bcd_7seg:segundo_numero.saida[2]
+leds_7seg[10] <= Bcd_7seg:segundo_numero.saida[3]
+leds_7seg[11] <= Bcd_7seg:segundo_numero.saida[4]
+leds_7seg[12] <= Bcd_7seg:segundo_numero.saida[5]
+leds_7seg[13] <= Bcd_7seg:segundo_numero.saida[6]
+leds_7seg[14] <= Bcd_7seg:terceiro_numero.saida[0]
+leds_7seg[15] <= Bcd_7seg:terceiro_numero.saida[1]
+leds_7seg[16] <= Bcd_7seg:terceiro_numero.saida[2]
+leds_7seg[17] <= Bcd_7seg:terceiro_numero.saida[3]
+leds_7seg[18] <= Bcd_7seg:terceiro_numero.saida[4]
+leds_7seg[19] <= Bcd_7seg:terceiro_numero.saida[5]
+leds_7seg[20] <= Bcd_7seg:terceiro_numero.saida[6]
+leds_7seg[21] <= Bcd_7seg:quarto_numero.saida[0]
+leds_7seg[22] <= Bcd_7seg:quarto_numero.saida[1]
+leds_7seg[23] <= Bcd_7seg:quarto_numero.saida[2]
+leds_7seg[24] <= Bcd_7seg:quarto_numero.saida[3]
+leds_7seg[25] <= Bcd_7seg:quarto_numero.saida[4]
+leds_7seg[26] <= Bcd_7seg:quarto_numero.saida[5]
+leds_7seg[27] <= Bcd_7seg:quarto_numero.saida[6]
+lim_tent <= comparador:verif_tent.result
+
+
+|Cofre|Datapath:fluxo_dados|Teclado_chaveado:entrada_chave
+linha[0] => Mux0.IN19
+linha[0] => Mux1.IN19
+linha[0] => Mux2.IN19
+linha[0] => Mux3.IN19
+linha[0] => Mux4.IN19
+linha[0] => Mux5.IN19
+linha[0] => Mux6.IN19
+linha[0] => Mux7.IN19
+linha[0] => Mux8.IN19
+linha[1] => Mux0.IN18
+linha[1] => Mux1.IN18
+linha[1] => Mux2.IN18
+linha[1] => Mux3.IN18
+linha[1] => Mux4.IN18
+linha[1] => Mux5.IN18
+linha[1] => Mux6.IN18
+linha[1] => Mux7.IN18
+linha[1] => Mux8.IN18
+linha[2] => Mux0.IN17
+linha[2] => Mux1.IN17
+linha[2] => Mux2.IN17
+linha[2] => Mux3.IN17
+linha[2] => Mux4.IN17
+linha[2] => Mux5.IN17
+linha[2] => Mux6.IN17
+linha[2] => Mux7.IN17
+linha[2] => Mux8.IN17
+linha[3] => Mux0.IN16
+linha[3] => Mux1.IN16
+linha[3] => Mux2.IN16
+linha[3] => Mux3.IN16
+linha[3] => Mux4.IN16
+linha[3] => Mux5.IN16
+linha[3] => Mux6.IN16
+linha[3] => Mux7.IN16
+linha[3] => Mux8.IN16
+col_ativa[0] => Equal0.IN2
+col_ativa[0] => Equal1.IN1
+col_ativa[0] => Equal2.IN1
+col_ativa[1] => Equal0.IN1
+col_ativa[1] => Equal1.IN2
+col_ativa[1] => Equal2.IN0
+col_ativa[2] => Equal0.IN0
+col_ativa[2] => Equal1.IN0
+col_ativa[2] => Equal2.IN2
+tecla[0] <= tecla.DB_MAX_OUTPUT_PORT_TYPE
+tecla[1] <= tecla.DB_MAX_OUTPUT_PORT_TYPE
+tecla[2] <= tecla.DB_MAX_OUTPUT_PORT_TYPE
+tecla[3] <= tecla.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|comparador:verif_numero
+a[0] => Equal0.IN3
+a[1] => Equal0.IN2
+a[2] => Equal0.IN1
+a[3] => Equal0.IN0
+b[0] => Equal0.IN7
+b[1] => Equal0.IN6
+b[2] => Equal0.IN5
+b[3] => Equal0.IN4
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|comparador:verif_insert
+a[0] => Equal0.IN3
+a[1] => Equal0.IN2
+a[2] => Equal0.IN1
+a[3] => Equal0.IN0
+b[0] => Equal0.IN7
+b[1] => Equal0.IN6
+b[2] => Equal0.IN5
+b[3] => Equal0.IN4
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|registrador_16bits:registrador_senha
+clk => registrador_carga_paralela:reg_zero_tres.clk
+clk => registrador_carga_paralela:reg_quatro_sete.clk
+clk => registrador_carga_paralela:reg_oito_onze.clk
+clk => registrador_carga_paralela:reg_quinze_doze.clk
+load => registrador_carga_paralela:reg_zero_tres.enable
+load => registrador_carga_paralela:reg_quatro_sete.enable
+load => registrador_carga_paralela:reg_oito_onze.enable
+load => registrador_carga_paralela:reg_quinze_doze.enable
+reset => registrador_carga_paralela:reg_zero_tres.reset
+reset => registrador_carga_paralela:reg_quatro_sete.reset
+reset => registrador_carga_paralela:reg_oito_onze.reset
+reset => registrador_carga_paralela:reg_quinze_doze.reset
+input[0] => registrador_carga_paralela:reg_zero_tres.input[0]
+input[1] => registrador_carga_paralela:reg_zero_tres.input[1]
+input[2] => registrador_carga_paralela:reg_zero_tres.input[2]
+input[3] => registrador_carga_paralela:reg_zero_tres.input[3]
+output[0] <= registrador_carga_paralela:reg_zero_tres.output[0]
+output[1] <= registrador_carga_paralela:reg_zero_tres.output[1]
+output[2] <= registrador_carga_paralela:reg_zero_tres.output[2]
+output[3] <= registrador_carga_paralela:reg_zero_tres.output[3]
+output[4] <= registrador_carga_paralela:reg_quatro_sete.output[0]
+output[5] <= registrador_carga_paralela:reg_quatro_sete.output[1]
+output[6] <= registrador_carga_paralela:reg_quatro_sete.output[2]
+output[7] <= registrador_carga_paralela:reg_quatro_sete.output[3]
+output[8] <= registrador_carga_paralela:reg_oito_onze.output[0]
+output[9] <= registrador_carga_paralela:reg_oito_onze.output[1]
+output[10] <= registrador_carga_paralela:reg_oito_onze.output[2]
+output[11] <= registrador_carga_paralela:reg_oito_onze.output[3]
+output[12] <= registrador_carga_paralela:reg_quinze_doze.output[0]
+output[13] <= registrador_carga_paralela:reg_quinze_doze.output[1]
+output[14] <= registrador_carga_paralela:reg_quinze_doze.output[2]
+output[15] <= registrador_carga_paralela:reg_quinze_doze.output[3]
+
+
+|Cofre|Datapath:fluxo_dados|registrador_16bits:registrador_senha|registrador_carga_paralela:reg_zero_tres
+clk => output[0]~reg0.CLK
+clk => output[1]~reg0.CLK
+clk => output[2]~reg0.CLK
+clk => output[3]~reg0.CLK
+enable => output[3]~reg0.ENA
+enable => output[2]~reg0.ENA
+enable => output[1]~reg0.ENA
+enable => output[0]~reg0.ENA
+reset => output[0]~reg0.ACLR
+reset => output[1]~reg0.ACLR
+reset => output[2]~reg0.ACLR
+reset => output[3]~reg0.ACLR
+input[0] => output[0]~reg0.DATAIN
+input[1] => output[1]~reg0.DATAIN
+input[2] => output[2]~reg0.DATAIN
+input[3] => output[3]~reg0.DATAIN
+output[0] <= output[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|registrador_16bits:registrador_senha|registrador_carga_paralela:reg_quatro_sete
+clk => output[0]~reg0.CLK
+clk => output[1]~reg0.CLK
+clk => output[2]~reg0.CLK
+clk => output[3]~reg0.CLK
+enable => output[3]~reg0.ENA
+enable => output[2]~reg0.ENA
+enable => output[1]~reg0.ENA
+enable => output[0]~reg0.ENA
+reset => output[0]~reg0.ACLR
+reset => output[1]~reg0.ACLR
+reset => output[2]~reg0.ACLR
+reset => output[3]~reg0.ACLR
+input[0] => output[0]~reg0.DATAIN
+input[1] => output[1]~reg0.DATAIN
+input[2] => output[2]~reg0.DATAIN
+input[3] => output[3]~reg0.DATAIN
+output[0] <= output[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|registrador_16bits:registrador_senha|registrador_carga_paralela:reg_oito_onze
+clk => output[0]~reg0.CLK
+clk => output[1]~reg0.CLK
+clk => output[2]~reg0.CLK
+clk => output[3]~reg0.CLK
+enable => output[3]~reg0.ENA
+enable => output[2]~reg0.ENA
+enable => output[1]~reg0.ENA
+enable => output[0]~reg0.ENA
+reset => output[0]~reg0.ACLR
+reset => output[1]~reg0.ACLR
+reset => output[2]~reg0.ACLR
+reset => output[3]~reg0.ACLR
+input[0] => output[0]~reg0.DATAIN
+input[1] => output[1]~reg0.DATAIN
+input[2] => output[2]~reg0.DATAIN
+input[3] => output[3]~reg0.DATAIN
+output[0] <= output[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|registrador_16bits:registrador_senha|registrador_carga_paralela:reg_quinze_doze
+clk => output[0]~reg0.CLK
+clk => output[1]~reg0.CLK
+clk => output[2]~reg0.CLK
+clk => output[3]~reg0.CLK
+enable => output[3]~reg0.ENA
+enable => output[2]~reg0.ENA
+enable => output[1]~reg0.ENA
+enable => output[0]~reg0.ENA
+reset => output[0]~reg0.ACLR
+reset => output[1]~reg0.ACLR
+reset => output[2]~reg0.ACLR
+reset => output[3]~reg0.ACLR
+input[0] => output[0]~reg0.DATAIN
+input[1] => output[1]~reg0.DATAIN
+input[2] => output[2]~reg0.DATAIN
+input[3] => output[3]~reg0.DATAIN
+output[0] <= output[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|comparador_16bits:verif_senha
+a[0] => comparador:comp_zero_tres.a[0]
+a[1] => comparador:comp_zero_tres.a[1]
+a[2] => comparador:comp_zero_tres.a[2]
+a[3] => comparador:comp_zero_tres.a[3]
+a[4] => comparador:comp_quatro_sete.a[0]
+a[5] => comparador:comp_quatro_sete.a[1]
+a[6] => comparador:comp_quatro_sete.a[2]
+a[7] => comparador:comp_quatro_sete.a[3]
+a[8] => comparador:comp_oito_onze.a[0]
+a[9] => comparador:comp_oito_onze.a[1]
+a[10] => comparador:comp_oito_onze.a[2]
+a[11] => comparador:comp_oito_onze.a[3]
+a[12] => comparador:comp_quinze_doze.a[0]
+a[13] => comparador:comp_quinze_doze.a[1]
+a[14] => comparador:comp_quinze_doze.a[2]
+a[15] => comparador:comp_quinze_doze.a[3]
+b[0] => comparador:comp_zero_tres.b[0]
+b[1] => comparador:comp_zero_tres.b[1]
+b[2] => comparador:comp_zero_tres.b[2]
+b[3] => comparador:comp_zero_tres.b[3]
+b[4] => comparador:comp_quatro_sete.b[0]
+b[5] => comparador:comp_quatro_sete.b[1]
+b[6] => comparador:comp_quatro_sete.b[2]
+b[7] => comparador:comp_quatro_sete.b[3]
+b[8] => comparador:comp_oito_onze.b[0]
+b[9] => comparador:comp_oito_onze.b[1]
+b[10] => comparador:comp_oito_onze.b[2]
+b[11] => comparador:comp_oito_onze.b[3]
+b[12] => comparador:comp_quinze_doze.b[0]
+b[13] => comparador:comp_quinze_doze.b[1]
+b[14] => comparador:comp_quinze_doze.b[2]
+b[15] => comparador:comp_quinze_doze.b[3]
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|comparador_16bits:verif_senha|comparador:comp_zero_tres
+a[0] => Equal0.IN3
+a[1] => Equal0.IN2
+a[2] => Equal0.IN1
+a[3] => Equal0.IN0
+b[0] => Equal0.IN7
+b[1] => Equal0.IN6
+b[2] => Equal0.IN5
+b[3] => Equal0.IN4
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|comparador_16bits:verif_senha|comparador:comp_quatro_sete
+a[0] => Equal0.IN3
+a[1] => Equal0.IN2
+a[2] => Equal0.IN1
+a[3] => Equal0.IN0
+b[0] => Equal0.IN7
+b[1] => Equal0.IN6
+b[2] => Equal0.IN5
+b[3] => Equal0.IN4
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|comparador_16bits:verif_senha|comparador:comp_oito_onze
+a[0] => Equal0.IN3
+a[1] => Equal0.IN2
+a[2] => Equal0.IN1
+a[3] => Equal0.IN0
+b[0] => Equal0.IN7
+b[1] => Equal0.IN6
+b[2] => Equal0.IN5
+b[3] => Equal0.IN4
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|comparador_16bits:verif_senha|comparador:comp_quinze_doze
+a[0] => Equal0.IN3
+a[1] => Equal0.IN2
+a[2] => Equal0.IN1
+a[3] => Equal0.IN0
+b[0] => Equal0.IN7
+b[1] => Equal0.IN6
+b[2] => Equal0.IN5
+b[3] => Equal0.IN4
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|contador:cont_tent
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk => cnt[16].CLK
+clk => cnt[17].CLK
+clk => cnt[18].CLK
+clk => cnt[19].CLK
+clk => cnt[20].CLK
+clk => cnt[21].CLK
+clk => cnt[22].CLK
+clk => cnt[23].CLK
+clk => cnt[24].CLK
+clk => cnt[25].CLK
+clk => cnt[26].CLK
+clk => cnt[27].CLK
+clk => cnt[28].CLK
+clk => cnt[29].CLK
+clk => cnt[30].CLK
+clk => cnt[31].CLK
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|comparador:verif_tent
+a[0] => Equal0.IN2
+a[1] => Equal0.IN1
+a[2] => Equal0.IN0
+b[0] => Equal0.IN5
+b[1] => Equal0.IN4
+b[2] => Equal0.IN3
+result <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|Bcd_7seg:primeiro_numero
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+saida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|Bcd_7seg:segundo_numero
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+saida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|Bcd_7seg:terceiro_numero
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+saida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|Datapath:fluxo_dados|Bcd_7seg:quarto_numero
+entrada[0] => Mux0.IN19
+entrada[0] => Mux1.IN19
+entrada[0] => Mux2.IN19
+entrada[0] => Mux3.IN19
+entrada[0] => Mux4.IN19
+entrada[0] => Mux5.IN19
+entrada[0] => Mux6.IN19
+entrada[1] => Mux0.IN18
+entrada[1] => Mux1.IN18
+entrada[1] => Mux2.IN18
+entrada[1] => Mux3.IN18
+entrada[1] => Mux4.IN18
+entrada[1] => Mux5.IN18
+entrada[1] => Mux6.IN18
+entrada[2] => Mux0.IN17
+entrada[2] => Mux1.IN17
+entrada[2] => Mux2.IN17
+entrada[2] => Mux3.IN17
+entrada[2] => Mux4.IN17
+entrada[2] => Mux5.IN17
+entrada[2] => Mux6.IN17
+entrada[3] => Mux0.IN16
+entrada[3] => Mux1.IN16
+entrada[3] => Mux2.IN16
+entrada[3] => Mux3.IN16
+entrada[3] => Mux4.IN16
+entrada[3] => Mux5.IN16
+entrada[3] => Mux6.IN16
+saida[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|controladora:controle
+clk => fechar_passado.CLK
+clk => teclado_passado.CLK
+clk => insert_passado.CLK
+clk => estado_atual~1.DATAIN
+insert => process_1.IN1
+insert => insert_passado.DATAIN
+reset => estado_atual~3.DATAIN
+reset => insert_passado.ENA
+reset => teclado_passado.ENA
+reset => fechar_passado.ENA
+igual => Selector1.IN3
+igual => estado_futuro.erro.DATAB
+lim_erro => Selector2.IN3
+lim_erro => Selector0.IN3
+fechar => process_1.IN1
+fechar => fechar_passado.DATAIN
+teclado => process_1.IN1
+teclado => teclado_passado.DATAIN
+ent_lib <= ent_lib.DB_MAX_OUTPUT_PORT_TYPE
+load_ent <= load_ent.DB_MAX_OUTPUT_PORT_TYPE
+res_ent <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+res_cont <= res_cont.DB_MAX_OUTPUT_PORT_TYPE
+clk_cont <= clk_cont.DB_MAX_OUTPUT_PORT_TYPE
+bloqueado <= bloqueado.DB_MAX_OUTPUT_PORT_TYPE
+errado <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+aberto <= aberto.DB_MAX_OUTPUT_PORT_TYPE
+
+

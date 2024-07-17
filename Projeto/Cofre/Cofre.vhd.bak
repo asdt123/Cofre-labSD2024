@@ -1,0 +1,72 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Cofre is
+
+	generic
+	(
+		DATA_WIDTH : natural := 4
+	);
+
+	port 
+	(
+		senha			:in std_logic_vector	((DATA_WIDTH-1) downto 0);
+		insert		:in std_logic;
+		clk			:in std_logic;
+		reset			:in std_logic;
+		
+		ent_hab		:out std_logic;
+		aberto		:out std_logic;
+		bloqueado	:out std_logic;
+		fechado		:out std_logic
+	);
+
+end entity;
+
+architecture rtl of Cofre is
+component Datapath is
+
+	generic
+	(
+		DATA_WIDTH : natural := 4
+	);
+
+	port 
+	(
+		senha			:in std_logic_vector	((DATA_WIDTH-1) downto 0);
+		cont_clk		:in std_logic;
+		cont_reset	:in std_logic;
+		
+		comp_senha	:out std_logic;
+		lim_tent		:out std_logic
+	);
+
+end component;
+
+component controladora is
+
+	port(
+		clk		:		in	std_logic;
+		insert	:		in	std_logic;
+		reset		:		in	std_logic;
+		igual		:		in	std_logic;
+		lim_erro	:		in	std_logic;
+		
+		ent_lib	:		out	std_logic;
+		res_cont	:		out	std_logic;
+		clk_cont	:		out	std_logic;
+		bloqueado:		out	std_logic;
+		errado	:		out	std_logic;
+		aberto	:		out	std_logic
+	);
+
+end component;
+	signal saida_contador: std_logic_vector(3 downto 0);
+	signal conta_c, conta_r, comp_s, lim_t: std_logic;
+begin
+	fluxo_dados: Datapath generic map (Data_width) port map(senha, conta_c,conta_r, comp_s, lim_t);
+	controle: controladora port map(clk, insert, reset, comp_s, lim_t,ent_hab, conta_r,conta_c, bloqueado, errado, aberto);
+
+end rtl;

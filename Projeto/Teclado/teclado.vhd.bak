@@ -1,0 +1,32 @@
+-- Quartus II VHDL Template
+-- Barrel Shifter
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity teclado is
+	port 
+	(
+		linhas 	: in std_logic_vector (3 downto 0)
+		colunas 	: in std_logic_vector (2 downto 0)
+		output	: out std_logic_vector (3 downto 0)
+	);
+
+end entity;
+
+architecture rtl of teclado is
+begin
+	output <= x"7" when linha(0) = '1' and coluna(0) = '1' else
+				x"8" when linha(0) = '1' and coluna(1) = '1' else
+				x"9" when linha(0) = '1' and coluna(2) = '1' else
+				x"4" when linha(1) = '1' and coluna(0) = '1' else
+				x"5" when linha(1) = '1' and coluna(1) = '1' else
+				x"6" when linha(1) = '1' and coluna(2) = '1' else
+				x"1" when linha(2) = '1' and coluna(0) = '1' else
+				x"2" when linha(2) = '1' and coluna(1) = '1' else
+				x"3" when linha(2) = '1' and coluna(2) = '1' else
+				x"F" when linha(3) = '1' and coluna(0) = '1' else
+				x"0" when linha(3) = '1' and coluna(1) = '1' else
+				x"E" when linha(3) = '1' and coluna(2) = '1'
+end rtl;
